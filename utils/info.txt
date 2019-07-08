@@ -1,0 +1,2 @@
+le répertoire "utils\" contient les divers fonctionnalités de l'application.
+les fonctions utilisateur
