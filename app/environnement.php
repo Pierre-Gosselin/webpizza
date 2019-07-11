@@ -17,7 +17,7 @@ if (!isset($dev_domains)){
 if (
     !empty($_SERVER['SERVER_NAME ']) &&
     in_array($_SERVER['SERVER_NAME ']), $dev_domains)
+    
     {
         env = "dev";
     }
-)

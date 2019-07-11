@@ -13,6 +13,8 @@ require_once "../app/environnement.php";
 
 //04. Comportement des erreurs
 
+require_once "..app/err_reporting.php";
+
 //05. Connexions aux bases de données
 
 //06. Routage de l'application
