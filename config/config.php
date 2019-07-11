@@ -70,6 +70,7 @@ $route = [];
 
 // Inclusion de la config du routage
 require_once "routes.php";
+
 /**
  * 5 Définition des expressions régulères
  */

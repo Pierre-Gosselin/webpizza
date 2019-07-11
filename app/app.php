@@ -5,9 +5,11 @@
 //02. Intégration de la configuration
 require_once "../config/config.php";
 
-echo WEBSITE_TITLE;
+//echo WEBSITE_TITLE;
 
 //03. Définition de l'environnement
+
+require_once "../app/environnement.php";
 
 //04. Comportement des erreurs
 
@@ -16,8 +18,6 @@ echo WEBSITE_TITLE;
 //06. Routage de l'application
 
 //07. Inclusion des fonctions Utils
-
-
 
 //08. Compilation de la page (part 1)
 

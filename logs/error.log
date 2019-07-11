@@ -14,3 +14,7 @@
 [Mon Jul 08 16:05:14.303580 2019] [php7:error] [pid 4548:tid 2008] [client 127.0.0.1:52303] script 'C:/xampp/htdocs/webpizza/public/header.php' not found or unable to stat
 [Mon Jul 08 16:05:36.327495 2019] [php7:error] [pid 4548:tid 2008] [client 127.0.0.1:52308] script 'C:/xampp/htdocs/webpizza/public/header.php' not found or unable to stat
 [Mon Jul 08 16:05:46.943103 2019] [php7:error] [pid 4548:tid 1988] [client 127.0.0.1:52312] script 'C:/xampp/htdocs/webpizza/public/footer.php' not found or unable to stat
+[Tue Jul 09 10:18:22.645974 2019] [php7:crit] [pid 11396:tid 1988] [client 127.0.0.1:56036] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in C:\\xampp\\htdocs\\webpizza\\config\\config.php on line 51
+[Tue Jul 09 10:18:51.030692 2019] [php7:notice] [pid 11396:tid 2000] [client 127.0.0.1:56037] PHP Notice:  Undefined variable: WEBSITE_TITLE in C:\\xampp\\htdocs\\webpizza\\app\\app.php on line 7
+[Tue Jul 09 10:18:51.839852 2019] [php7:notice] [pid 11396:tid 2000] [client 127.0.0.1:56037] PHP Notice:  Undefined variable: WEBSITE_TITLE in C:\\xampp\\htdocs\\webpizza\\app\\app.php on line 7
+[Tue Jul 09 10:19:29.470662 2019] [php7:crit] [pid 11396:tid 2000] [client 127.0.0.1:56045] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in C:\\xampp\\htdocs\\webpizza\\config\\config.php on line 52
