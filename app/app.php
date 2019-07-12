@@ -5,8 +5,6 @@
 //02. Intégration de la configuration
 require_once "../config/config.php";
 
-//echo WEBSITE_TITLE;
-
 //03. Définition de l'environnement
 
 require_once "../app/environnement.php";
@@ -20,6 +18,8 @@ require_once "../app/err_reporting.php";
 require_once "../app/dbconnect.php";
 
 //06. Routage de l'application
+
+require_once "../app/routing.php";
 
 //07. Inclusion des fonctions Utils
 
