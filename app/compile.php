@@ -38,10 +38,22 @@ $controller_file = $controller[0];
 $controller_path = "../src/controllers/".$controller_file.".php";
 
 // Définition de la fonction à exécuter
-$controller_methode = $controller[1];
+
+$controller_methode = isset($controller[1]) ? $controller[1] : null ;
+
+if ($controller_methode !== null && !empty($controller_methode))
+{
+    $controller_methode = $controller_file."_".$controller[1];
+}
+else
+{
+    $controller_methode = $controller_file."_index";
+}
+
+$controller_methode = join("_", $controller);
 
 /**
- * 
+ *  Intégration du fichier controleur
  * 
 */
 
@@ -49,4 +61,20 @@ if (!file_exists($controller_path)){
     throw new Exception("Le fichier controleur de la route  " . $route[0]. " est manquant");
 }
 
+// le fichier controleur existe, il est inclus au programme
 include_once ($controller_path);
+
+/**
+ * Execution de la fonction du controleur
+ * 
+ */
+
+// test de l'existance de la fonction du controleur
+if (!function_exists($controller_methode))
+{
+    // Si la fonction n'exisite pas, le programme est arrêté
+    throw new Exception("la méthode " . $controller_methode . " de la route ".$route[0]." n'existe pas");
+}
+
+// Execution de la fonction liée à la route
+$controller_methode();

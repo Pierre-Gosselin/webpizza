@@ -34,7 +34,10 @@ include_once "../app/utils.php";
 // include_once "../utils/url.php";
 
 
-//08. Compilation de la page (part 1 - Le controleur principal)
+//08. Controleur principal ( commun à toutes les pages du site)
+
+include_once "../src/controllers/common.php";
+
 
 //09. Compilation de la page (part 2 - La compilation finale)
 
