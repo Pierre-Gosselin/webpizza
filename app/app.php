@@ -34,6 +34,8 @@ include_once "../app/utils.php";
 // include_once "../utils/url.php";
 
 
-//08. Compilation de la page (part 1)
+//08. Compilation de la page (part 1 - Le controleur principal)
 
-//09. Compilation de la page (part 2)
+//09. Compilation de la page (part 2 - La compilation finale)
+
+include_once "../app/compile.php";

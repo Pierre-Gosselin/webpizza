@@ -22,7 +22,7 @@ if (!function_exists('getUserLanguages'))
             return $languages_arr;
         }
         // else {
-            return $languages_arr[0];
+           return $languages_arr[0];
         // }
         
     }
