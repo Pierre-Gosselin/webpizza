@@ -23,6 +23,17 @@ require_once "../app/routing.php";
 
 //07. Inclusion des fonctions Utils
 
+include_once "../app/utils.php";
+
+// include_once UTILS_PATH."dump.php";
+// include_once "../utils/flashbag.php";
+// include_once "../utils/getEnumData.php";
+// include_once "../utils/getUserLanguages.php";
+// include_once "../utils/randstr.php";
+// include_once "../utils/redirect.php";
+// include_once "../utils/url.php";
+
+
 //08. Compilation de la page (part 1)
 
 //09. Compilation de la page (part 2)

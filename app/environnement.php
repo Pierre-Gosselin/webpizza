@@ -14,7 +14,7 @@ if (!isset($dev_domains)){
 // Et que la valeur de la super global $_SERVER['SERVER_NAME '] est dans le tableau.
 // $dev_domains, alors on redéfini la variable $_ENV
 
-if ( 
+if (
     !empty($_SERVER['SERVER_NAME']) && 
     in_array($_SERVER['SERVER_NAME'], $dev_domains))
 {

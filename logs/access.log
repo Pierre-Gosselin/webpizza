@@ -176,3 +176,15 @@
 127.0.0.1 - - [12/Jul/2019:09:24:07 +0200] "GET /favicon.ico HTTP/1.1" 200 229
 127.0.0.1 - - [12/Jul/2019:09:27:43 +0200] "GET /admin/product/create HTTP/1.1" 200 298
 127.0.0.1 - - [12/Jul/2019:09:27:43 +0200] "GET /favicon.ico HTTP/1.1" 200 229
+127.0.0.1 - - [12/Jul/2019:09:39:15 +0200] "GET /admin/product/create HTTP/1.1" 200 298
+127.0.0.1 - - [12/Jul/2019:09:39:15 +0200] "GET /favicon.ico HTTP/1.1" 200 229
+127.0.0.1 - - [12/Jul/2019:09:40:50 +0200] "GET /admin/product/create HTTP/1.1" 200 263
+127.0.0.1 - - [12/Jul/2019:09:40:50 +0200] "GET /favicon.ico HTTP/1.1" 200 203
+127.0.0.1 - - [12/Jul/2019:09:42:03 +0200] "GET /admin/product/create HTTP/1.1" 200 263
+127.0.0.1 - - [12/Jul/2019:09:42:03 +0200] "GET /favicon.ico HTTP/1.1" 200 203
+127.0.0.1 - - [12/Jul/2019:09:49:14 +0200] "GET /admin/product/create HTTP/1.1" 200 263
+127.0.0.1 - - [12/Jul/2019:09:49:14 +0200] "GET /favicon.ico HTTP/1.1" 200 203
+127.0.0.1 - - [12/Jul/2019:09:52:54 +0200] "GET /admin/product/create HTTP/1.1" 200 295
+127.0.0.1 - - [12/Jul/2019:09:52:54 +0200] "GET /favicon.ico HTTP/1.1" 200 235
+127.0.0.1 - - [12/Jul/2019:09:58:29 +0200] "GET /admin/product/create HTTP/1.1" 200 263
+127.0.0.1 - - [12/Jul/2019:09:58:29 +0200] "GET /favicon.ico HTTP/1.1" 200 203

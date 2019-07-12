@@ -22,7 +22,6 @@ if (!empty($_SERVER['REQUEST_URI']))
     $uri = explode("?", $uri); // Séparation de l'URI est des paramètres 
     $uri = $uri[0]; // Récupération de l'URI sans paramètre
 
-    var_dump ($uri);
 }
 // Recherche de l'URI dans le tableau de routage
 foreach ($routes as $route) 
@@ -46,9 +45,3 @@ foreach ($routes as $route)
 if (!isset($GLOBALS['route_active'])) {
     $GLOBALS['route_active'] = "error-404";
 }
-
-echo "<pre>";
-var_dump($route);
-
-echo "</pre>";
-

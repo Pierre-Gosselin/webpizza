@@ -36,7 +36,8 @@ $env = "prod";
 $dev_domains =[
     "127.0.0.1",
     "localhost",
-    "webpizza.local"
+    "webpizza.local",
+    "www.webpizza.local"
 ];
 
  /**
