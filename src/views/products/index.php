@@ -27,6 +27,5 @@
 </div>
 
 <?php
-dump(url("contact",true));
     include_once "../src/views/layout/footer.php";
 ?>

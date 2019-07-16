@@ -36,23 +36,25 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link <?= ($GLOBALS['route_active'] == "pizzas" ? "active" : null) ?>" href="/pizzas">Pizzas</a>
-                            <!-- <a class="nav-link <?= ($GLOBALS['route_active'] == "pizzas" ? "active" : null) ?>" href="<?= url('pizzas') ?>">Pizzas</a> -->
+                            <a class="nav-link <?= ($GLOBALS['route_active'] == "starter" ? "active" : null) ?>" href="<?= url('starter') ?>">Entrée</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?= ($GLOBALS['route_active'] == "pastas" ? "active" : null) ?>" href="/pates">Pates</a>
+                            <a class="nav-link <?= ($GLOBALS['route_active'] == "pizzas" ? "active" : null) ?>" href="<?= url('pizzas') ?>">Pizzas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?= ($GLOBALS['route_active'] == "salads" ? "active" : null) ?>" href="/salades">Salades</a>
+                            <a class="nav-link <?= ($GLOBALS['route_active'] == "pastas" ? "active" : null) ?>" href="<?= url('pastas') ?>">Pates</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?= ($GLOBALS['route_active'] == "desserts" ? "active" : null) ?>" href="/desserts">Desserts</a>
+                            <a class="nav-link <?= ($GLOBALS['route_active'] == "salads" ? "active" : null) ?>" href="<?= url('salads') ?>">Salades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?= ($GLOBALS['route_active'] == "drinks" ? "active" : null) ?>" href="/boissons">Boissons</a>
+                            <a class="nav-link <?= ($GLOBALS['route_active'] == "desserts" ? "active" : null) ?>" href="<?= url('desserts') ?>">Desserts</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?= ($GLOBALS['route_active'] == "menus" ? "active" : null) ?>" href="/menus">Menus</a>
+                            <a class="nav-link <?= ($GLOBALS['route_active'] == "drinks" ? "active" : null) ?>" href="<?= url('drinks') ?>">Boissons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <?= ($GLOBALS['route_active'] == "menus" ? "active" : null) ?>" href="<?= url('menus') ?>">Menus</a>
                         </li>
                     </ul>
 
@@ -63,18 +65,18 @@
                                 <?= $_SESSION['user']['fullname'] ?>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="/mon-compte">Mon compte</a>
+                                <a class="dropdown-item" href="<?= url('account') ?>">Mon compte</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="/deconnexion">Déconnexion</a>
+                                <a class="dropdown-item" href="<?= url('logout') ?>">Déconnexion</a>
                             </div>
                         </li>
                         <?php else: ?>
                         <li class="nav-item">
-                            <a class="nav-link <?= ($GLOBALS['route_active'] == "account" ? "active" : null) ?>" href="/mon-compte">Mon Compte</a>
+                            <a class="nav-link <?= ($GLOBALS['route_active'] == "account" ? "active" : null) ?>" href="<?= url('account') ?>">Mon Compte</a>
                         </li>
                         <?php endif; ?>
                         <li class="nav-item">
-                            <a class="nav-link <?= ($GLOBALS['route_active'] == "order" ? "active" : null) ?> cart" href="/panier">
+                            <a class="nav-link <?= ($GLOBALS['route_active'] == "order" ? "active" : null) ?> cart" href="<?= url('order') ?>">
                                 Panier
                                 <?= getCartSummary() ?>
                             </a>

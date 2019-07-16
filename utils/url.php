@@ -7,7 +7,7 @@ function url($routeName, $absolute = false) :string
     // Et récupère le path de la route $routeName
     // Définition de la variable base
     $base = "";
-    $path = "/";
+    $path = "/404";
     if ($absolute){
         //le shema : http ou https
         $scheme = "http";
@@ -36,6 +36,3 @@ function url($routeName, $absolute = false) :string
     }
     return $base.$path;
 }
-
-
-// url("contact",true); // http://webpizza.local/contact

@@ -1,6 +1,14 @@
 <?php
 
-//01. Intégration du fichier d'exécution de l'application
+/**
+ * Fichier d'exécution de l'application
+ */
+
+ /**
+  * 1. Démarrage de la session 
+  * La session va permettre de suivre le visiteur pendant la visite sur le site
+  */
+ session_start();
 
 //02. Intégration de la configuration
 require_once "../config/config.php";
@@ -25,20 +33,9 @@ require_once "../app/routing.php";
 
 include_once "../app/utils.php";
 
-// include_once UTILS_PATH."dump.php";
-// include_once "../utils/flashbag.php";
-// include_once "../utils/getEnumData.php";
-// include_once "../utils/getUserLanguages.php";
-// include_once "../utils/randstr.php";
-// include_once "../utils/redirect.php";
-// include_once "../utils/url.php";
-
-
-
 //08. Controleur principal ( commun à toutes les pages du site)
 
 include_once "../src/controllers/common.php";
-
 
 //09. Compilation de la page (part 2 - La compilation finale)
 
