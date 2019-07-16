@@ -24,9 +24,9 @@ if (UTILS_PATH != null)
     if (is_dir(UTILS_PATH))
     {
         // Scanner le répertoire UTILS_PATH
-        $utils_path = scandir(UTILS_PATH);
+        $utils_scan = scandir(UTILS_PATH);
         // Une boucle sur la liste des entrées $utils_scan
-        foreach ($utils_path as $file) {
+        foreach ($utils_scan as $file) {
             // Filtre les fichiers terminant par ".php"
             if (preg_match('/\.php$/',$file) == 1){
                 $file = UTILS_PATH.$file;

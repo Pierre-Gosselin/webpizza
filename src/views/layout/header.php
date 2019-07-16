@@ -40,6 +40,9 @@
                             <!-- <a class="nav-link <?= ($GLOBALS['route_active'] == "pizzas" ? "active" : null) ?>" href="<?= url('pizzas') ?>">Pizzas</a> -->
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link <?= ($GLOBALS['route_active'] == "pastas" ? "active" : null) ?>" href="/pates">Pates</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link <?= ($GLOBALS['route_active'] == "salads" ? "active" : null) ?>" href="/salades">Salades</a>
                         </li>
                         <li class="nav-item">

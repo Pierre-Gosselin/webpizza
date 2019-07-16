@@ -24,7 +24,7 @@ if (!isset($route[2]) || empty($route[2]))
 }
 
 // Initialisation des variables qui définiront le fichier et la fonction à éxecuter
-$controller_exp = $route[2];
+$controller_exp = $route[2]; // hompage:index
 $controller_file = null; // Homepage
 $controller_path = null; // "../src/controllers/".$controller_file.".php";
 $controller_methode = null; // homepage_index
@@ -34,11 +34,9 @@ $controller = explode(":",$controller_exp);
 
 // Définition du fichier controleur
 $controller_file = $controller[0];
-
 $controller_path = "../src/controllers/".$controller_file.".php";
 
 // Définition de la fonction à exécuter
-
 $controller_methode = isset($controller[1]) ? $controller[1] : null ;
 
 if ($controller_methode !== null && !empty($controller_methode))
@@ -50,13 +48,9 @@ else
     $controller_methode = $controller_file."_index";
 }
 
-$controller_methode = join("_", $controller);
-
 /**
  *  Intégration du fichier controleur
- * 
 */
-
 if (!file_exists($controller_path)){
     throw new Exception("Le fichier controleur de la route  " . $route[0]. " est manquant");
 }
@@ -77,4 +71,6 @@ if (!function_exists($controller_methode))
 }
 
 // Execution de la fonction liée à la route
+
+
 $controller_methode();
