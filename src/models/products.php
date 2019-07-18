@@ -63,3 +63,28 @@ function getMenus()
 {
     return getProducts('menu');
 }
+
+/**
+ * Récupération d'un produit par son ID
+ *
+ * @param integer $id
+ * @return void
+ */
+function getProduct(int $id)
+{
+    GLOBAL $db;
+
+    // Définition de la requête
+    $sql = "SELECT `id`,`name`,`description`,`price`,`type`,`illustration` FROM `product` WHERE `id`=:id" ;
+
+    // Préparation de la requete
+
+    $q = $db['main']->prepare($sql);
+    $q->bindParam(':id',$id, PDO::PARAM_INT);
+
+    // Execution de la requete
+    $q->execute();
+
+    //Récupération des résultats
+    return $q->fetch(PDO::FETCH_ASSOC);
+}

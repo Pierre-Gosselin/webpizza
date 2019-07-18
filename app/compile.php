@@ -72,5 +72,4 @@ if (!function_exists($controller_methode))
 
 // Execution de la fonction liée à la route
 
-
 $controller_methode();

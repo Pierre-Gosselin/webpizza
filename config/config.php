@@ -75,3 +75,9 @@ require_once "routes.php";
 /**
  * 5 Définition des expressions régulères
  */
+
+ $regex = [
+    // La chaine doit commencer et finir par un caractère alpha et peut (ou pas) contenir un "-"
+    'names' => "/^([a-z]+)(?:\s|-)?([a-z]+)$/i"
+
+ ];

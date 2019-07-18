@@ -41,14 +41,15 @@ $routes = [
     ["login", "/connexion", "security:login", ["HEAD","GET","POST"]],
     ["register", "/inscription", "security:register", ["HEAD","GET","POST"]],
     ["forgotten_password", "/mot-de-passe-oublie", "security:forgotten_password", ["HEAD","GET","POST"]],
+    ["renew_password", "/modifier-mon-mot-de-passe", "security:renew_password", ["HEAD","GET","POST"]],
     ["logout", "/deconnexion", "security:logout", ["HEAD","GET"]],
 
     // Page de commande
     ["order", "/panier", "order:index", ["HEAD","GET"]],
 
     // Ajout de produit au panier
-    ["add_to_order", "/add-to-order", "order:add", ["HEAD","GET"]],
-
+    ["add_to_order", "/ajouter-au-panier", "order:add", ["HEAD","GET"]],
+    ["remove_from_order", "/supprimer-du-panier", "order:remove", ["HEAD","GET"]],
     // Profil utilisateur
     ["account", "/mon-compte", "account", ["HEAD","GET"]],
 

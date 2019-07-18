@@ -14,4 +14,6 @@
      {
         redirect(url('login'));
      }
+
+     echo "La page de mon compte";
  }

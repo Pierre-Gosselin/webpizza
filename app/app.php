@@ -3,12 +3,11 @@
 /**
  * Fichier d'exécution de l'application
  */
-
  /**
   * 1. Démarrage de la session 
   * La session va permettre de suivre le visiteur pendant la visite sur le site
   */
- session_start();
+session_start();
 
 //02. Intégration de la configuration
 require_once "../config/config.php";
